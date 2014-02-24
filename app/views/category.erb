@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>The posts in the Category <%= @category.name %>: </h2>
+  <ul>
+    <% @posts.each do |post| %>
+    <li><a href="/posts/<%=post.id%>"><%= post.name%></a></li>
+    <% end %>
+  </ul>
+
+  <a class="left" method="get" href ="/">Go Home</a>
+  <a class="right" method = "get" href="/posts/create">Add Your Post</a>
+</div>

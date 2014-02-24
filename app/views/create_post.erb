@@ -1,0 +1,22 @@
+<div id = "create_container">
+  <h2>Please fill out all fields:</h2>
+  <form id="create_post" method="post" action="/posts/create">
+    <input type="text" name="post[name]" placeholder="Title">
+    <br><br>
+    <input type="text" name="post[price]" placeholder="Price">
+    <br><br>
+
+     <input type="text" name="post[email]" placeholder="Email">
+     <br><br>
+     <textarea name = "post[description]"></textarea>
+    <select name="post[category_id]">
+      <% Category.all.each do |category| %>
+        <option value=<%= category.id %> > <%= category.name %></option>
+      <% end %>
+    </select>
+    <br><br><br>
+    <input class="submit" type="submit" value="Create Post">
+
+    <br><br>
+  </form>
+</div>

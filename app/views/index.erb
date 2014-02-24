@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Welcome to Taraslist!</h1>
+  <p>Choose a category:</p>
+  <ul>
+  <% @categories.each do |category| %>
+    <li><a href="categories/<%=category.id%>"> <%= category.name  %><a></li>
+    <% end%>
+  </ul>
+</div>

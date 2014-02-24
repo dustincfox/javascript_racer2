@@ -1,0 +1,9 @@
+<div class="container">
+  <h3>Great a new post has been added with the title "<%= @new_post.name %>"</h3>
+  <p>You can edit this post at "http://localhost:9393/posts/edit/<%= @new_post.id %>"</p>
+
+  <form>
+    <a class="left" method = "get" href= "/">Home</a>
+    <a class="right" method= "get" href= "/posts/edit/<%= @new_post.id %>">Edit</a>
+  </form>
+</div>

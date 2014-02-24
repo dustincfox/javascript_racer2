@@ -1,0 +1,24 @@
+<div class="container">
+  <h2> Please edit the post with title <%= @post.name %>
+    <br><br>
+
+  <form id="create_post" method="post" action="/posts/edit/<%= @post.id %>">
+    <input type="text" name="post[name]" value="<%= @post.name %>">
+    <br><br>
+    <input type="text" name="post[price]" value="<%= @post.price %>">
+    <br><br>
+
+     <input type="text" name="post[email]" value="<%= @post.email %>">
+     <br><br>
+     <textarea name = "post[description]"></textarea>
+    <select name="post[category_id]" value="<%= @post.description %>">
+      <% Category.all.each do |category| %>
+        <option value=<%= category.id %> > <%= category.name %></option>
+      <% end %>
+    </select>
+    <br><br><br>
+    <input class="submit" type="submit" value="Save changes">
+    <br><br>
+  </form>
+
+</div>

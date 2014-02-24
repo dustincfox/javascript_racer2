@@ -1,0 +1,25 @@
+.container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted black;
+}
+th {
+  text-align: left;
+}
+
+.submit {
+  float:right;
+  margin-right: 15px;
+}
+
+#create_container {
+  width: 400px;
+  margin: 20px auto;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted black;
+}
+
+.right {
+  float:right;
+}
